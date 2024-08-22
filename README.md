@@ -24,10 +24,39 @@ Before you begin, ensure that you have the following:
 ```bash
 git clone https://github.com/your-repo/terraform-gke-vpc-setup.git
 cd terraform-gke-vpc-setup
+```
 
-### 1. Initialize Terraform
+### 2. Initialize Terraform
 Run the following command to initialize Terraform. This will download the necessary provider plugins and set up the environment:
 
 ```bash
 terraform init
+```
 
+### 3. Customize terraform.tfvars
+Edit the terraform.tfvars file to match your specific environment and requirements. This file contains the values for variables such as the project ID, VPC name, subnet configurations, and GKE cluster name.
+
+```hcl
+project_id        = "temp-862g6l3f-wsky"
+region            = "us-central1"
+vpc_name          = "default-vpc"
+
+subnets = {
+  "subnet-1" = {
+    name = "subnet-1"
+    ip   = "10.0.0.0/24"
+  }
+}
+
+service_accounts = {
+  "gke-cluster-1" = {
+    name         = "sa-gke-cluster-1"
+    display_name = "Default Service Account"
+  }
+}
+
+cluster_name      = "gke-cluster-1"
+cluster_subnet_name = "subnet-1"
+secondary_pods_range     = "10.1.0.0/16"
+secondary_services_range = "10.2.0.0/20"
+```
