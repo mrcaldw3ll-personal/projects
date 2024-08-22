@@ -24,3 +24,10 @@ Before you begin, ensure that you have the following:
 ```bash
 git clone https://github.com/your-repo/terraform-gke-vpc-setup.git
 cd terraform-gke-vpc-setup
+
+### 1. Initialize Terraform
+Run the following command to initialize Terraform. This will download the necessary provider plugins and set up the environment:
+
+```bash
+terraform init
+
