@@ -22,8 +22,8 @@ Before you begin, ensure that you have the following:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/terraform-gke-vpc-setup.git
-cd terraform-gke-vpc-setup
+git clone https://github.com/your-repo/terraform-gke-project.git
+cd terraform-gke-project
 ```
 
 ### 2. Initialize Terraform
