@@ -10,9 +10,8 @@ output "subnet_ids" {
   value       = [for subnet in module.vpc.subnets : subnet.name]
 }
 
-
 output "gke_cluster_name" {
   description = "The name of the GKE cluster"
-  value       = module.gke.name
+  value       = module.gke.cluster_name
 }
 
