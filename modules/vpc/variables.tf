@@ -1,4 +1,4 @@
-# variables.tf
+# modules/vpc/variables.tf
 
 variable "project_id" {
   description = "The project ID to deploy the infrastructure"
