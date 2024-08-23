@@ -38,7 +38,7 @@ terraform init
 Edit the terraform.tfvars file to match your specific environment and requirements. This file contains the values for variables such as the project ID, VPC name, subnet configurations, and GKE cluster name.
 
 ```hcl
-project_id        = "temp-862g6l3f-wsky"
+project_id        = "temp-862g6l3f-xxxx"
 region            = "us-central1"
 ```
 
