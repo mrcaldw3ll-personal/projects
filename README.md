@@ -15,8 +15,13 @@ This Terraform project is designed to create a Google Kubernetes Engine (GKE) cl
 Before you begin, ensure that you have the following:
 
 - [Terraform](https://www.terraform.io/downloads.html) installed.
-- A Google Cloud Platform account with the necessary permissions to create VPCs, subnets, and GKE clusters.
 - A Google Cloud project where you want to deploy the infrastructure.
+- A Google Cloud Platform Terraform service account with the necessary permissions to create VPCs, subnets, and GKE clusters.
+- A JSON key file for Terraform GCP account configured locally or configured in Terraform Enterprise Workspace
+
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-service-account-file.json"
+```
 
 ## Setup and Usage
 
