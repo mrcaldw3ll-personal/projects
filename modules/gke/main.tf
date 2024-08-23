@@ -2,7 +2,6 @@
 
 # GKE Cluster using Terraform Registry module
 # https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest
-
 module "gke" {
   source  = "terraform-google-modules/kubernetes-engine/google"
   version = "~> 28.0"
