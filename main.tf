@@ -11,6 +11,7 @@ provider "google" {
 }
 
 # VPC creation using Terraform Registry module
+# https://registry.terraform.io/modules/terraform-google-modules/network/google/latest
 module "vpc" {
   source  = "terraform-google-modules/network/google"
   version = "~> 9.0"
@@ -34,7 +35,7 @@ module "vpc" {
   }]
 }
 
-# Create Service Accounts using a loop
+# Create Service Accounts
 resource "google_service_account" "service_accounts" {
   for_each = var.service_accounts
 
@@ -43,6 +44,7 @@ resource "google_service_account" "service_accounts" {
 }
 
 # GKE Cluster using Terraform Registry module
+# https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest
 module "gke" {
   source            = "terraform-google-modules/kubernetes-engine/google"
   version           = "~> 28.0"
