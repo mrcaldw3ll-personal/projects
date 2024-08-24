@@ -6,6 +6,8 @@ locals {
   services_range      = "services-range"
 }
 
+
+
 # Configure the VPC and Subnets.  Secondary IP ranges for GKE cluster
 module "vpc" {
   source = "./modules/vpc"
