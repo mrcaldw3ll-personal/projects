@@ -28,7 +28,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-service-account-file.json"
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/terraform-gke-project.git
+git clone https://github.com/mrcaldw3ll-personal/terraform-gke-project.git
 cd terraform-gke-project
 ```
 
