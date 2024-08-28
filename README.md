@@ -47,14 +47,21 @@ project_id        = "temp-862g6l3f-xxxx"
 region            = "us-central1"
 ```
 
-### 4. Apply the Terraform Configuration
+### 4. Plan the Terraform Configuration
+Run the following command to create the execution plan:
+
+```bash
+terraform plan
+```
+
+### 5. Apply the Terraform Configuration
 Run the following command to create the infrastructure:
 
 ```bash
 terraform apply
 ```
 
-### 5. Review the Outputs
+### 6. Review the Outputs
 Once the infrastructure is created, Terraform will output relevant information such as the VPC name, subnet IDs, and GKE cluster name. These outputs are defined in the outputs.tf file.
 
 ### Cleanup
